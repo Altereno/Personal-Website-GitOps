@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: personal-website
+  namespace: website
+spec:
+  selector:
+    matchLabels:
+      app: personal-website
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: personal-website
+    spec:
+      containers:
+        - name: nginx
+          image: gitea.cluster.stevenchen.one/steven/website:6b3993618d3e3a90bb1647561ba1243521e1369f
+          ports:
+            - containerPort: 80
