@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://gitea.cluster.stevenchen.one/steven/website-argo.git
+    repoURL: https://gitea.cluster.stevenchen.one/steven/Personal-Website-GitOps.git
     targetRevision: main
     path: apps/website
   syncPolicy:
