@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: gitea.cluster.stevenchen.one/steven/website:6b3993618d3e3a90bb1647561ba1243521e1369f
+          image: gitea.cluster.stevenchen.one/steven/personal-website:269ede31657ef439778a2a7570bdc3e51b55bb01
           ports:
             - containerPort: 80
